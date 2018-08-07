@@ -15,6 +15,6 @@ app.get('/', async(request, response) => {
 //printing the message body in terminal when you receive the event
 app.post('/', async(request, response) => {
  console.log(request.body);
- if (!data) return response.send(400);
+ if (!request.data) return response.send(400);
 
 })
